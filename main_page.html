@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Let's Chat Web App</title>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main_page.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <button id="out_btn" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger" style = "margin-left: 1000px;"> Logout</button>
+            <center>
+                <h1 class = "header" style = "font-weight: 700;">
+                    Let's Chat
+                    <sup>
+                        <img src = "let's chat.png" style = "height: 70px; width: 70px;">
+                    </sup>
+                </h1>
+                <h2 id = "user_name"></h2>
+                <div class = "form-group">
+                    <h4 style = "font-weight: 600">Add Room Name:</h4>
+                    <input type = "text" id = "add_room_name" placeholder = "#Room Name" class = "form-control">
+                </div>
+                <button type = "button" id = "Add_room" class = "btn btn-success">Add Room</button>
+                <h3 class = "color-white" style = "font-weight: 500">All Chats</h3>
+
+                <div id = "output"></div>
+                    
+            </center>
+        </div>
+    </body>
+</html>
